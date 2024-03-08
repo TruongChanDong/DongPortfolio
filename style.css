@@ -21,13 +21,14 @@ header ul li a{
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     position: relative;
+    font-weight: bold;
 }
 header ul li a:hover{
     color: #000000;
     cursor: pointer;
 
 }
-header ul li a::after {
+/* header ul li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -43,7 +44,7 @@ header ul li a::after {
 header ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+} */
 
 header ul li i{
     color: white;
@@ -140,6 +141,7 @@ li {
     display: inline-block;
     background-color: #333;
     color: #fff;
+    font-weight: bolder;
     padding: 10px 20px;
     text-decoration: none;
     margin-top: 10px;
@@ -183,7 +185,7 @@ li {
     }
 
     .left-column, .right-column {
-        width: 100%;
+        width: 94%;
     }
 }
 @media only screen and (max-width: 768px) {
