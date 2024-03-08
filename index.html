@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>DongTruong - Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <ul>
+                <li><a href=""><i class="fa-regular fa-file"></i>Resume</a></li>
+                <li><a href="https://github.com/TruongChanDong" target="_blank"><i class="fa-brands fa-github"></i>Github</a></li>
+            </ul>
+            <h1>Dong Truong </h1>
+            <img src="img/coding.png" alt="" class="profile-image">
+            <h2>I'm, Web Developer</h2>
+            
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hi there! I'm DongTruong, a passionate and creative web developer based in SAI GON UNI. 
+                        With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning ideas into interactive and engaging web experiences.</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <h3>Programing Languages and Tools:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                    </ul>
+                </section>
+
+                <section id="language">
+                    <h2>Languages</h2>
+                    <p>English</p>
+                    <p>Chinese</p>
+                </section>
+                
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>SAI GON UNIVERSITY (2020 - now)</p>
+                </section>
+                
+            </div>
+
+            <div class="right-column">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <!-- Add your project cards here -->
+                    <div class="project-card">
+                        <h3>Course Managment</h3>
+                        <p>Programing languages: JavaSwing, MySQL</p>
+                        <p>Our online course management project is a flexible and interactive education system, 
+                            focusing on course registration, online assessments, and dynamic communication between instructors and students. 
+                            Built on the NetBean and MySQL we are committed to providing a smooth and efficient online learning experience.</p>
+                        <a href="https://github.com/hidatdev133/CourseManagement" target="_blank">View Project</a>
+                    </div>        
+                    <div class="project-card">
+                        <h3>Drum Kit</h3>
+                        <p>Programing languages: HTML, CSS, JavaScript</p>
+                        <p>The Drum Kit project is a virtual percussion instrument that allows users to experience the thrill of playing drums right from their web 
+                            browser. This interactive and dynamic web application replicates the experience of playing a real drum set, providing users with a responsive and enjoyable musical experience.</p>
+                        <img src="coding.png" alt="" style="height: 80px; ">
+                        <a href="https://github.com/hidatdev133/CourseManagement" target="_blank">View Project</a>
+                    </div>                     
+                </section>
+            </div>
+            
+        </div>
+        <button id="back-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <footer>
+        <ul>
+            <li><i class="fa-regular fa-envelope"></i>dongtruong328@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i>+84 904 901 767</li>
+        </ul>
+    </footer>
+    </div>
+
+  
+<script>
+    function scrollToTop() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.onscroll = function () {
+    showBackToTopButton();
+};
+
+function showBackToTopButton() {
+    var button = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>
